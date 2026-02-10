@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emmanuel John | Luxury VA</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+    --royal-blue: #0a1f44;
+    --accent: #4169e1;
+    --light-gray: #555;
+    --card-bg: rgba(65,105,225,0.05);
+    --btn-bg: #4169e1;
+    --btn-hover: #3b82f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: var(--royal-blue);
+    line-height: 1.7;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+h1, h2, h3 { font-weight: 700; }
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--accent);
+}
+
+p { color: var(--light-gray); font-size: 16px; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--royal-blue);
+}
+
+.navbar a {
+    color: var(--royal-blue);
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover { color: var(--btn-bg); }
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.hero-text { max-width: 600px; }
+
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.hero-text span { color: var(--btn-bg); }
+
+.hero-text p { margin: 20px 0; font-size: 18px; }
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 30px;
+    background: var(--btn-bg);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(65,105,225,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(65,105,225,0.4);
+    background: var(--btn-hover);
+}
+
+/* Fiverr icon inside button */
+.btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hero Image Circular & Bigger */
+.hero-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(65,105,225,0.3);
+    border: 5px solid var(--btn-bg);
+    transition: transform 0.3s;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Grid Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(65,105,225,0.4);
+}
+
+/* Skills */
+.skills { display: flex; flex-wrap: wrap; justify-content: center; }
+.skills span {
+    display: inline-block;
+    background: var(--btn-bg);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+}
+.skills span:hover { transform: scale(1.1); }
+
+/* Footer */
+footer { text-align: center; padding: 40px; background: #f0f0f0; color: var(--royal-blue); }
+
+/* Responsive */
+@media(max-width:900px){
+    .hero { flex-direction: column; text-align: center; }
+    .hero-img img { margin-top: 40px; width: 220px; height: 220px; }
+    .hero-text .btn { margin-top: 10px; }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Emmanuel John</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Professional <span>Virtual Assistant</span></h1>
+        <p>
+            I help entrepreneurs, CEOs, and business owners streamline operations,
+            increase productivity, and scale efficiently. Reliable, detail-oriented,
+            and committed to excellence.
+        </p>
+        <!-- Hire Me button with Fiverr icon -->
+        <a href="https://www.fiverr.com/s/YRA5xza" target="_blank" class="btn">
+            <img src="18.jpg" alt="Fiverr Icon"> Hire Me
+        </a>
+    </div>
+    <div class="hero-img">
+        <img src="Emmanuel photo.jpeg" alt="Profile Picture">
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a dedicated Virtual Assistant with strong experience in administrative
+        support, data management, research, inbox organization, and client communication.
+        My mission is to help businesses stay organized, productive, and ahead of deadlines.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Administrative Support</h3>
+            <p>Email management, calendar scheduling, document organization, and workflow support.</p>
+        </div>
+        <div class="card">
+            <h3>Data Entry & Research</h3>
+            <p>Accurate data handling, online research, report preparation, and information analysis.</p>
+        </div>
+        <div class="card">
+            <h3>Social Media Management</h3>
+            <p>Content scheduling, engagement monitoring, and brand support strategies.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Core Skills</h2>
+    <div class="skills">
+        <span>Time Management</span>
+        <span>Attention to Detail</span>
+        <span>Communication</span>
+        <span>Google Workspace</span>
+        <span>Microsoft Office</span>
+        <span>Data Analysis</span>
+        <span>Client Support</span>
+        <span>Organization</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Ready to work together? Let’s grow your business efficiently.</p>
+    <br>
+    <a href="https://www.fiverr.com/s/YRA5xza" target="_blank" class="btn">
+        <img src="18.jpg" alt="Fiverr Icon"> Hire Me
+    </a>
+</section>
+
+<footer>
+    © 2026 Emmanuel John | Virtual Assistant
+</footer>
+
+</body>
+</html>
